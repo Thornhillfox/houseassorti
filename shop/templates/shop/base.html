@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		{% block title %}
+		Дом Ассорти
+		{% endblock %}
+	</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+<body>
+	<div id="header">
+		<a href="/" class="logo">Дом Ассорти</a>
+	</div>
+	<div id="subheader">
+		<div class="cart">Корзина пуста</div>
+	</div>
+	<div id="content">
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+</html>

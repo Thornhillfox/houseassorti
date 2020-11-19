@@ -1,0 +1,3 @@
+#pip install -r requirements.txt
+django==3.0.0
+Pillow==8.0.1
