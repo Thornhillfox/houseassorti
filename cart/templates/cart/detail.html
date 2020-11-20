@@ -1,0 +1,26 @@
+{% extends 'shop/base.html' %}
+
+{% load static %}
+
+{% block title %}
+	Ваша корзина
+{% endblock %}
+
+<h1>Ваша корзина</h1>
+<table class="cart">
+	<thead>
+		<tr>
+			<th>
+				Картинка
+			</th>
+			<th>Товар</th>
+			<th>Количество</th>
+			<th>Удалить</th>
+			<th>Общая сумма</th>
+			<th>Cумма</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for item in cart %}
+	</tbody>
+</table>
