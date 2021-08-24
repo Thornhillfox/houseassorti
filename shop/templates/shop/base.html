@@ -21,8 +21,11 @@
 			{% if cart|length > 0 %}
 				Ваша корзина:
 				<a href="{% url 'cart:cart_detail' %}">
-					{{ total_items }} товар {{ total_items|pluralize }},
-					{{ cart.get_total_price }} руб.
+					<!-- {{ total_items }} товар {{ total_items|pluralize }}, -->
+					<!-- '%s' % ('a' if total_items > 1 and total_items ) -->
+
+					Кол-во товаров: {{ total_items }},
+					Сумма:{{ cart.get_total_price }} руб.
 				</a>
 			{% else %}
 				Корзина пуста
